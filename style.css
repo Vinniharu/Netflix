@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'font', sans-serif ;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'font';
+    src: url(NetflixSans-Regular.otf);
+}
+body{
+    background: #000;
+    color: #fff;
+}
+.header{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 165px;
+    margin-right: 165px;
+    height: 86px;
+    align-items: center;
+}
+.logo img{
+    width: 100%;
+    height: 40px;
+}
+.signin a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #e50914;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-align: center;
+}
+.cta{
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 186px 10%;
+}
+.cta h1{
+    font-size: 48px;
+    font-weight: bolder ;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+}
+.cta h2{
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 24px;
+    font-family: sans-serif;
+}
+.cta p{
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 16px;
+    font-family: sans-serif;
+}
+.cta form input{
+    font-size: 18px;
+    height: 55px;
+    width: 380px;
+    background-color: transparent;
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    color: gray;
+    padding-left: 20px;
+}
+.cta form button{
+    color: #fff;
+    font-size: 23px;
+    font-family: sans-serif;
+    height: 55px;
+    width: 200px;
+    background-color: #e50914;
+    border: none;
+    border-radius: 4px;
+}
+.features{
+    margin: 0 86px;
+    font-size: 22px;
+}
+.c1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 15%;
+    border-top: 5px solid #606060;
+}
+.c1 .text{
+    flex-basis: 50%;
+    margin-bottom: 24px;
+}
+.text h1{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.c1 .feature1{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.feature1 img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 24px;
+}
+.faq h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+.questions{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 900px;
+}
+.questions li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.questions li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: #303030;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 50px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s ;
+}
+input[type="radio"]{
+    display: none;
+}
+.questions .content{
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.questions input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+    margin-top: 6px;
+}
+.questions input[type="radio"]:checked+label::after{
+    transform: rotate(135deg);
+}
+small p{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.faq form input {
+    font-size: 18px;
+    height: 55px;
+    width: 380px;
+    background-color: transparent;
+    border: 0.5px solid rgb(24, 113, 24);
+    border-radius: 4px;
+    color: gray;
+    padding-left: 20px;
+}.faq form{
+    margin-bottom: 130px;
+}
+.faq form button {
+    color: #fff;
+    font-size: 23px;
+    font-family: sans-serif;
+    height: 55px;
+    width: 200px;
+    background-color: #e50914;
+    border: none;
+    border-radius: 4px;
+}
+footer{
+    margin: 0 153px;
+}
+footer h2{
+    font-size: 16px;
+    font-weight: lighter;
+    margin-bottom: 24px;
+    text-decoration: underline;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.option ul{
+    list-style-type: none;
+}
+.option ul li{
+    padding-bottom: 13px;
+}
+.option li a{
+    font-size: 14px;
+    font-weight: lighter;
+    color: #fff;
+}
+.lang {
+    position: relative;
+    display: inline-block;
+    padding: 12px 0;
+}
+
+.dropbtn {
+    background-color: transparent;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 30px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.lang:hover .dropdown-content {
+    display: block;
+}
+.netflix{
+    padding: 14px 0;
+    margin-bottom: 60px;
+}
+.netflix p{
+    font-size: 14px;
+}
